@@ -6,13 +6,13 @@
 //     random: uniqueRandomArray(ninjaList)
 // }
 
-import uniqueRandomArray from 'unique-random-array';
-import ninjaList from './ninja-list.json';
+const uniqueRandomArray = require('unique-random-array');
+const ninjaList = require('./ninja-list.json');
 
 const all = ninjaList;
 const random = uniqueRandomArray(ninjaList)
 
-export {
+module.exports = {
     all,
     random
 }
